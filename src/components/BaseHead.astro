@@ -11,7 +11,7 @@ export interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = '/placeholder-social.jpg' } = Astro.props;
+const { title, description, image = '/assets/images/Phone_Pic.jpeg' } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -22,7 +22,7 @@ const { title, description, image = '/placeholder-social.jpg' } = Astro.props;
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
-	
+
 <!-- RSS Feed Discovery -->
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
 
